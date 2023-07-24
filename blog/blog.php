@@ -1,9 +1,9 @@
 <?php
     include "../connect/connect.php";
     include "../connect/session.php";
-    echo "<pre>";
-    var_dump($_SESSION);
-    echo "</pre>";
+    // echo "<pre>";
+    // var_dump($_SESSION);
+    // echo "</pre>";
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -46,19 +46,6 @@
             <div class="left">
                 <div class="blog__wrap">
                     <div class="cards__inner col2 line2">
-                        <!-- <div class="card">
-                            <figure class="card__img">
-                                <source srcset="../assets/img/blog01.jpg, ../assets/img/blog01@2x.jpg 2x, ../assets/img/blog01@3x.jpg 3x" />
-                                <img src="../assets/img/blog01.jpg" alt="소개이미지">
-                            </figure>
-                            <div class="card__title">
-                                <h3>코딩 기술에 대한 자습서 및 가이드</h3>
-                                <p>이것은 블로그를 위한 고전적인 선택이며 다른 코딩 블로그와 차별화하는 좋은 방법입니다. 코딩에 대한 기본부터 고급 주제에 이르기까지 무엇이든 가르칠 수 있습니다.</p>
-                            </div>
-                            <div class="card__info">
-                                <a href="#" class="more">더보기</a>
-                            </div>
-                        </div> -->
 <?php
     $sql = "SELECT * FROM blog WHERE blogDelete = 0 ORDER BY blogID DESC";
     $result = $connect -> query($sql);

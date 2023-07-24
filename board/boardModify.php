@@ -2,9 +2,9 @@
     include "../connect/connect.php" ;
     include "../connect/session.php" ;
     include "../connect/sessionCheck.php" ;
-    echo "<pre>";
-    var_dump($_SESSION);
-    echo "</pre>";
+    // echo "<pre>";
+    // var_dump($_SESSION);
+    // echo "</pre>";
     $userID = $_SESSION['memberID'];
     $boardID = $_GET['boardID'];
     $sql = "SELECT memberID  FROM board WHERE boardID = {$boardID}";
